@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Expense - Money Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="logo-section">
+        <h2><span class="logo-icon">💰</span> Money Manager</h2>
+    </div>
+    
+    <div class="user-profile">
+        <div class="user-avatar">{{ session.username[0].upper() if session.username else 'U' }}</div>
+        <div class="user-info">
+            <div class="username">{{ session.username if session.username else 'User' }}</div>
+            <div class="role">User</div>
+        </div>
+    </div>
+    
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a href="/dashboard" class="nav-link">
+                <i>📊</i> Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/add-income" class="nav-link">
+                <i>➕</i> Add Income
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/add-expense" class="nav-link active">
+                <i>➖</i> Add Expense
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/dashboard" class="nav-link">
+                <i>📈</i> Analytics
+            </a>
+        </li>
+    </ul>
+    
+    <a href="/logout" class="logout-link">
+        <i>🚪</i> Logout
+    </a>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <div class="form-card">
+        <h4>Add Expense</h4>
+        
+        <form method="POST">
+            <input class="form-control" type="number" name="amount" placeholder="Amount" required>
+            
+            <select class="form-control" name="category" required>
+                <option value="">Select Category</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Rent</option>
+                <option>Shopping</option>
+                <option>Other</option>
+            </select>
+            
+            <input class="form-control" type="text" name="description" placeholder="Description">
+            <input class="form-control" type="date" name="date" required>
+            
+            <button type="submit" class="btn btn-danger" style="width: 100%; margin-top: 10px;">Add Expense</button>
+            <a href="/dashboard" class="btn btn-secondary" style="width: 100%; margin-top: 10px; text-align: center;">Back to Dashboard</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
