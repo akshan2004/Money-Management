@@ -26,7 +26,7 @@ This application allows users to manage income and expenses efficiently with aut
 ## 🖼️ ScreenShot
 
 <p align="center">
-  <img src="visioneye_system_architecture.png" width="600">
+  <img src="DashBoard.png" width="600">
 </p>
 
 ---
