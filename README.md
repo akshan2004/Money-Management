@@ -42,24 +42,24 @@ This application allows users to manage income and expenses efficiently with aut
 ---
 
 ## 📂 Project Structure
-Money-Management/
-│
-├── app.py
-├── database.db
-├── requirements.txt
-├── README.md
-│
-├── templates/
-│ ├── login.html
-│ ├── register.html
-│ ├── dashboard.html
-│ ├── add_income.html
-│ └── add_expense.html
-│
-├── static/
-│ └── style.css
-│
-└── venv/
+- Money-Management/
+- │
+- ├── app.py
+- ├── database.db
+- ├── requirements.txt
+- ├── README.md
+- │
+- ├── templates/
+- │ ├── login.html
+- │ ├── register.html
+- │ ├── dashboard.html
+- │ ├── add_income.html
+- │ └── add_expense.html
+- │
+- ├── static/
+- │ └── style.css
+- │
+- └── venv/
 
 
 
@@ -69,22 +69,22 @@ Money-Management/
 
 1. Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/Money-Managemnet.git
-cd Money-Management
+- git clone https://github.com/YOUR_USERNAME/Money-Managemnet.git
+- cd Money-Management
 
-2.Create virtual environment
+2. Create virtual environment
 
-python -m venv venv
-venv\Scripts\activate
+- python -m venv venv
+- venv\Scripts\activate
 
-3.Install dependencies
-pip install -r requirements.txt
+3. Install dependencies
+- pip install -r requirements.txt
 
-4.Run the Application
-python app.py
+4. Run the Application
+- python app.py
 
-5.Open in Browser
-http://127.0.0.1:5000/
+5. Open in Browser
+- http://127.0.0.1:5000/
 
 ---
 
